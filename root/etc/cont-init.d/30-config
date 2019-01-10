@@ -1,0 +1,22 @@
+#!/usr/bin/with-contenv bash
+
+# Make our folders
+mkdir -p \
+        /{config,data,logs}
+
+# copy config files
+[[ ! -e /config/mosquitto.conf ]] && \
+        cp /defaults/mosquitto.conf /config/mosquitto.conf
+
+[[ ! -e /logs/mosquitto.log ]] && \
+        touch /logs/mosquitto.log && \
+        chmod 777 /logs/mosquitto.log
+
+# permissions
+chown -R abc:abc \
+        /config \
+        /data \
+        /logs
+
+chmod 755 /etc
+chmod 440 /etc/sudoers
