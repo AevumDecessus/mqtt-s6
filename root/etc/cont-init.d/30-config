@@ -6,7 +6,7 @@ mkdir -p \
 
 # copy config files
 [[ ! -e /config/mosquitto.conf ]] && \
-        cp /defaults/mosquitto.conf /config/mosquitto.conf
+        cp /defaults/mosquitto.conf /data/mosquitto.conf
 
 [[ ! -e /logs/mosquitto.log ]] && \
         touch /logs/mosquitto.log && \
