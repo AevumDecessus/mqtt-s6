@@ -1,4 +1,4 @@
-FROM lsiobase/alpine:3.8
+FROM lsiobase/alpine:3.15
 
 LABEL maintainer="aevumdecessus"
 
@@ -21,4 +21,4 @@ COPY root/ /
 
 # ports and volumes
 EXPOSE 1883
-VOLUME /config /data
+VOLUME /config
