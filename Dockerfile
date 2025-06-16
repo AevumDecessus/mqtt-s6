@@ -1,4 +1,4 @@
-FROM lsiobase/alpine:3.22
+FROM lsiobase/alpine:3.16
 
 LABEL maintainer="aevumdecessus"
 
