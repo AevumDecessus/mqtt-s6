@@ -10,7 +10,7 @@ mkdir -p \
 
 [[ ! -e /config/logs/mosquitto.log ]] && \
         touch /config/logs/mosquitto.log && \
-        chmod 777 /config/logs/mosquitto.log
+        chmod 660 /config/logs/mosquitto.log
 
 # permissions
 chown -R abc:abc \
